@@ -1,16 +1,10 @@
 {
   "functions": {
     "api/cron/run-jobs.ts": {
+      "runtime": "nodejs20.x",
       "memory": 1024,
-      "maxDuration": 900000
+      "maxDuration": 900,
+      "schedule": "@cron(*/15 * * * *)"
     }
-  },
-  "cron": [
-    {
-      "path": "/api/cron/run-jobs",
-      "schedule": "*/15 * * * *",
-      "httpMethod": "GET",
-      "secret": "VERCEL_CRON_SECRET"
-    }
-  ]
+  }
 }
