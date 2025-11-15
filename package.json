@@ -1,0 +1,29 @@
+{
+  "name": "drivereel-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "next-auth": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "node-fetch": "^3.3.1",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0"
+  }
+}
