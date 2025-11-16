@@ -3,8 +3,7 @@
     "api/cron/run-jobs.ts": {
       "runtime": "nodejs20.x",
       "memory": 1024,
-      "maxDuration": 900,
-      "schedule": "@cron(*/15 * * * *)"
+      "maxDuration": 900
     }
   }
 }
